@@ -22,7 +22,7 @@ my_fsl_BET = pe.Node(interface = fsl.BET(), name='my_fsl_BET', iterfield = [''])
 
 #Generic datasink module to store structured outputs
 my_io_DataSink = pe.Node(interface = io.DataSink(), name='my_io_DataSink', iterfield = [''])
-my_io_DataSink.inputs.base_directory = './output'
+my_io_DataSink.inputs.base_directory = './output_dir'
 
 #Create a workflow to connect all those nodes
 analysisflow = nipype.Workflow('MyWorkflow')

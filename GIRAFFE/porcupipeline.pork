@@ -701,7 +701,7 @@
           "name": "base_directory",
           "output": false,
           "outputPort": false,
-          "value": "'./output'",
+          "value": "'./output_dir'",
           "visible": true,
           "iterator": false
         },
